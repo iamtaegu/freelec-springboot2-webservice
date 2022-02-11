@@ -20,3 +20,20 @@
 		
 		
 *[RDS 생성 및 설정]*
+
+1. 데이터베이스 생성
+1. RDS 파라미터 설정
+	1. 타임존
+	1. Character Set
+	1. Max Connection
+1. 로컬PC에서 RDS 접속해보기
+	1. mysql, workbench
+1. EC2에서 RDS 접근 확인 
+	1. EC2에서 MySQL CLI 설치(참고, https://goddaehee.tistory.com/292)
+		1. wget https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+		1. yum localinstall mysql80-community-release-el7-5.noarch.rpm
+		1. yum install mysql-community-server
+		1. sudo systemctl start mysqld, sudo systemctl status mysqld
+1. mysql -u 계정 -p -h host주소
+
+*RDS 인바운드 규칙을 ANYWHERE로 했는데, 내일 EC2/로컬PC 대상만 가능하게 수정*
