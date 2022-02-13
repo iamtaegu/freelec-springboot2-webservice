@@ -37,3 +37,13 @@
 1. mysql -u 계정 -p -h host주소
 
 *RDS 인바운드 규칙을 ANYWHERE로 했는데, 내일 EC2/로컬PC 대상만 가능하게 수정*
+
+[EC2 서버에 프로젝트 배포]
+
+1. sudo yum install git
+1. git init, git clone url
+1. ./gradlew test 
+1. 배포 스크립트 만들기, /home/ec2-user/app/step1/deploy.sh
+	1. 프로젝트 최신화(git pull or git clone)
+	1. 프로젝트 테스트와 빌드(Gradle, Maven)
+	1. 프로젝트 실행 및 재실행(EC2서버에서) 
