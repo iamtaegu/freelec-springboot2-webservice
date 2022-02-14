@@ -47,3 +47,6 @@
 	1. 프로젝트 최신화(git pull or git clone)
 	1. 프로젝트 테스트와 빌드(Gradle, Maven)
 	1. 프로젝트 실행 및 재실행(EC2서버에서) 
+	
+	
+*프로젝트명 상이한 부분 보완 freelec-springboot2-webservice, SpringbootAWS*
