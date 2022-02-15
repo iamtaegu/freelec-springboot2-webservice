@@ -50,3 +50,12 @@
 	
 	
 *프로젝트명 상이한 부분 보완 freelec-springboot2-webservice, SpringbootAWS*
+*프로젝트 build 안되는 이슈 확인..*
+
+
+git branch
+git init
+git clone https://github.com/iamtaegu/freelec-springboot2-webservice.git master
+git remote add master https://github.com/iamtaegu/freelec-springboot2-webservice.git
+git pull master https://github.com/iamtaegu/freelec-springboot2-webservice.git
+git pull https://github.com/iamtaegu/freelec-springboot2-webservice.git master
