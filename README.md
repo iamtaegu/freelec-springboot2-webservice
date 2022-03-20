@@ -51,7 +51,7 @@
 	
 *프로젝트명 상이한 부분 보완 freelec-springboot2-webservice, SpringbootAWS*
 *프로젝트 build 안되는 이슈 확인..*
-*포털 로그인 고치고, EC2 도메인 등록하여 AWS위에서 포털 로그인 구현 
+*포털 로그인 고치고, EC2 도메인 등록하여 AWS위에서 포털 로그인 구현 (313p)
 
 git branch
 git init
