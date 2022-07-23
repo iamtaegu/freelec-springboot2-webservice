@@ -26,6 +26,30 @@ public class MemberController {
         return "members/createMemberForm";
     }
 
+    @GetMapping("/members/new_2")
+    public String createForm_2(Model model) {
+        model.addAttribute("memberForm", new MemberForm());
+        return "members/createMemberForm2";
+    }
+
+    //등록
+    @PostMapping("/members/new_2")
+    public String create_2(@Valid MemberForm form, BindingResult result) {
+
+        if (result.hasErrors()) {
+            return "members/createMemberForm";
+        }
+
+        Address address = new Address(form.getCity(), form.getStreet(), form.getZipcode());
+
+        Member member = new Member();
+        member.setName(form.getName());
+        member.setAddress(address);
+
+        memberService.join(member);
+        return "redirect:/";
+    }
+
     //등록
     @PostMapping("/members/new")
     public String create(@Valid MemberForm form, BindingResult result) {

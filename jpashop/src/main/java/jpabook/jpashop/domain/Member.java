@@ -20,6 +20,8 @@ public class Member {
     @NotEmpty
     private String name;
 
+    private String email;
+
     @Embedded
     private Address address;
 
